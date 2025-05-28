@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ruhən Neçə Yaşındasan?</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <div id="language-select" class="centered">
+    <h2 data-i18n="choose_language">Dil seçin / Choose language</h2>
+    <select id="language">
+      <option value="az">Azərbaycan</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="tr">Türkçe</option>
+      <option value="ru">Русский</option>
+    </select>
+    <button id="start-btn" data-i18n="start">Başla / Start</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <div id="question-number"></div>
+    <div id="question-text"></div>
+    <div id="answers"></div>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2 data-i18n="your_result">Nəticəniz</h2>
+    <div id="result-text"></div>
+    <button id="restart-btn" data-i18n="restart">Təkrar oyna / Restart</button>
+  </div>
+</div>
+
+<script src="languages.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
